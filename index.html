@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pavii's Birthday</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loadingScreen">
+    <h1>🎂 Birthday Verification System</h1>
+    <div id="loadingText">Initializing...</div>
+</div>
+
+<div id="mainContent" style="display:none;">
+    <div class="card">
+        <h1>Hey Pavii 👋</h1>
+        <p>
+        This is <b>Yashwanth</b>, your lil kiddo lol.<br><br>
+        Happy Birthday 🎂💙<br>
+        May God bless you with happiness, success, good health,
+        lots of runs on the cricket field, and everything you're working towards.
+        </p>
+
+        <button onclick="showPlayerCard()">Open Surprise 🎁</button>
+    </div>
+
+    <div id="playerCard" class="card hidden">
+        <h2>🏏 PLAYER CARD</h2>
+        <h1>PAVITHRA "PAVII"</h1>
+
+        <p>Team: Pooley XI</p>
+        <p>❤️ RCB #1 Lover</p>
+        <p>👑 Virat Kohli's Wife</p>
+        <p>🏏 Cricket Merchant</p>
+        <p>✨ Aura: 100</p>
+        <p>😂 Humour: 100</p>
+
+        <button onclick="showMessage()">Next Surprise ➜</button>
+    </div>
+
+    <div id="messageCard" class="card hidden">
+        <h2>💌 Secret Message</h2>
+        <p>
+        Ngl, it's only been a few weeks,
+        but you've somehow become one of my favourite people to talk to.<br><br>
+
+        You're funny, chaotic, and somehow manage to make normal conversations memorable.<br><br>
+
+        Hope this year gives you lots of happiness, success,
+        and a lifetime supply of Kohli cover drives 😭💙
+        </p>
+
+        <button onclick="celebrate()">DO NOT CLICK 🎉</button>
+    </div>
+
+    <div class="card">
+        <h2>📸 Photo Gallery</h2>
+        <div class="gallery">
+            <img src="photos/photo1.jpg">
+            <img src="photos/photo2.jpg">
+            <img src="photos/photo3.jpg">
+        </div>
+    </div>
+</div>
+
+<canvas id="confetti"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
